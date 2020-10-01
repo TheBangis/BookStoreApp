@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginTop="15dp"
+            android:clickable="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <TextView
+                style="@style/viewParent.headerText"
+                android:id="@+id/setting"
+                android:text="@string/settings" />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/viewParent.headerText"
+                android:layout_below="@id/setting"
+                android:text="Babangida Sani"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="70dp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/more_options" />
+
+        <TextView
+            android:id="@+id/changePassword"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_vpn_key_black"
+            android:text="@string/change_password" />
+
+        <TextView
+            android:id="@+id/privacyPolicy"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_privacy"
+            android:text="@string/privacy_and_policy" />
+        <TextView
+
+            android:id="@+id/about"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_help"
+            android:text="@string/about" />
+
+        <TextView
+            android:id="@+id/logOut"
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/ic_logout"
+            android:text="@string/logout" />
+
+
+    </LinearLayout>
+
+</ScrollView>

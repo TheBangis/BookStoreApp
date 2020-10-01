@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Bookstore</string>
+    <string name="app_title">Shamrock Books Store</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="fullname">Full name (e.g Babangids sani)</string>
+    <string name="not_register">Already Have an account? sign In</string>
+    <string name="reset_password">Reset your password here</string>
+    <string name="book_author">Book author</string>
+    <string name="booktitle">Book title</string>
+    <string name="add_book">Add book</string>
+    <string name="add_book_story">Add book story info</string>
+    <string name="book_auth">Peter Thiel</string>
+    <string name="book_Title">Zero To One</string>
+    <string name="book_description">Derek Thomson describes Thiel\'s book as possibly the best business book he has ever read. In his review article, he wrote: Peter Thiel\'s new book, Zero to One, shines like a laser beam. Yes, this is a self-help book for entrepreneurs, bursting with bromides and sunny confidence about the future that only start-ups can build. But much more than that, it\'s also a lucid and profound articulation of capitalism and success in the 21st century economy</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="add_cover_page">Add cover page</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="eat_the_frog">Eat the Frog</string>
+    <string name="bookName">Title:</string>
+    <string name="bookAuthor">Author:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="change_password">  Change password</string>
+    <string name="privacy_and_policy">Privacy and policy</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="more_options">More options</string>
+
+</resources>

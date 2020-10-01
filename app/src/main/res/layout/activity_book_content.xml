@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookContentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/bookImag"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/eatthefrog" />
+
+        <TextView
+            android:id="@+id/bookNa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/bookImag"
+            android:fontFamily="@font/federo"
+            android:text="@string/bookName"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/bookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/bookNa"
+            android:text="@string/book_Title"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/bookAu"
+            android:layout_toRightOf="@id/bookImag"
+            android:layout_below="@id/bookNa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/bookAuthor"
+            android:fontFamily="sans-serif-light"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/bookAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/bookAu"
+            android:layout_below="@id/bookTitle"
+            android:text="@string/book_auth"
+            android:fontFamily="sans-serif-light"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_below="@id/bookImag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/book_description"
+            android:maxLines="400"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-light"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</ScrollView>
