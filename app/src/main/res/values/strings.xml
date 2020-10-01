@@ -32,5 +32,6 @@
     <string name="about">About</string>
     <string name="logout">Logout</string>
     <string name="more_options">More options</string>
+    <string name="book_store">Book store</string>
 
 </resources>

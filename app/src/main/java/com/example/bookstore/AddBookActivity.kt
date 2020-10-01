@@ -17,9 +17,9 @@ import java.util.*
 
 class AddBookActivity : AppCompatActivity() {
 
-    lateinit private var titleEditText: TextInputLayout
-    lateinit private var authorEditText: TextInputLayout
-    lateinit private var descriptionEditText: TextInputLayout
+    private lateinit var titleEditText: TextInputLayout
+    private lateinit var authorEditText: TextInputLayout
+    private lateinit var descriptionEditText: TextInputLayout
     private var selectedImage: Uri? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -89,7 +89,7 @@ class AddBookActivity : AppCompatActivity() {
 //            authorEditText.editText?.text = null
 //            descriptionEditText.editText?.text = null
             var mainActivity = Intent(this, MainActivity::class.java)
-            mainActivity.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+            mainActivity.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(mainActivity)
             Toast.makeText(this, "Added Successful", Toast.LENGTH_LONG).show()
         }
