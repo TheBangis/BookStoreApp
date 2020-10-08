@@ -1,4 +1,4 @@
-package com.example.bookstore
+ package com.example.bookstore
 
 import android.app.ActivityManager
 import android.content.Intent
@@ -17,9 +17,9 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-    lateinit private var emailEditText: TextInputLayout
-    lateinit private var passwordEditText: TextInputLayout
-    lateinit var auth: FirebaseAuth
+    private lateinit var emailEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var auth: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,12 +42,22 @@ class LoginActivity : AppCompatActivity() {
             emailEditText = findViewById(R.id.editEmail)
             passwordEditText = findViewById(R.id.editPassword)
 
-            val email = emailEditText.editText?.text.toString()
-            val password = passwordEditText.editText?.text.toString()
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+            if (emailEditText.text.toString().isEmpty()){
+                emailEditText.error = "Email required"
+                emailEditText.isFocusable = true
+            }
+            else if (passwordEditText.text.toString().isEmpty()){
 
-            if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password))
+                passwordEditText.error = "Password required"
+                passwordEditText.isFocusable = true
+            }
+            else{
 
-                auth.signInWithEmailAndPassword(email, password)
+
+
+            auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
 
@@ -67,11 +77,8 @@ class LoginActivity : AppCompatActivity() {
                             ).show()
                         }
                     }
-            else {
-                Toast.makeText(this, "All field are required", Toast.LENGTH_LONG).show()
 
-            }
-
+                    }
         }
     }
 
