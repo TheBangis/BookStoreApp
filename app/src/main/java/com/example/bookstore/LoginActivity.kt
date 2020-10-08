@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                             startActivity(intent)
                             finish()
-                            progressBar.visibility = View.VISIBLE
+//                            progressBar.visibility = View.VISIBLE
                             Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show()
 
 

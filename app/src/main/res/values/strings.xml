@@ -32,6 +32,10 @@
     <string name="about">About</string>
     <string name="logout">Logout</string>
     <string name="more_options">More options</string>
-    <string name="book_store">Book store</string>
+    <string name="book_store">Sign In</string>
+    <string name="account">To Account</string>
+    <string name="with">Sign with email address and password to use your book application</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="not_registered_sign_up">Not Registered? Sign up</string>
 
 </resources>

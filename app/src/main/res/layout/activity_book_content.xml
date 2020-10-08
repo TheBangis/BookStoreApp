@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".BookContentActivity">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/bookImag"
-            android:layout_width="100dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:src="@drawable/eatthefrog" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:focusable="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/bookImag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/eatthefrog" />
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/bookNa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_toRightOf="@id/bookImag"
+            android:layout_marginTop="0dp"
             android:fontFamily="@font/federo"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="8dp"
             android:text="@string/bookName"
             android:textSize="20sp"
             android:textStyle="normal" />
@@ -37,24 +52,23 @@
             android:id="@+id/bookTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/bookNa"
+            android:fontFamily="sans-serif-light"
             android:text="@string/book_Title"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-light"
             android:textStyle="normal" />
 
 
         <TextView
             android:id="@+id/bookAu"
-            android:layout_toRightOf="@id/bookImag"
-            android:layout_below="@id/bookNa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:text="@string/bookAuthor"
-            android:fontFamily="sans-serif-light"
+            android:fontFamily="@font/federo"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="8dp"
             android:textSize="18sp"
             android:textStyle="normal" />
 
@@ -62,27 +76,31 @@
             android:id="@+id/bookAuthor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/bookAu"
-            android:layout_below="@id/bookTitle"
-            android:text="@string/book_auth"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-light"
+            android:text="@string/book_auth"
             android:textSize="18sp"
             android:textStyle="normal" />
 
-        <TextView
-            android:id="@+id/bookDescription"
-            android:layout_below="@id/bookImag"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="8dp"
-            android:text="@string/book_description"
-            android:maxLines="400"
-            android:textStyle="normal"
-            android:fontFamily="sans-serif-light"
-            android:textSize="18sp" />
+            android:layout_below="@id/cardView">
 
-    </RelativeLayout>
-</ScrollView>
+            <TextView
+                android:id="@+id/bookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="400"
+                android:text="@string/book_description"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
