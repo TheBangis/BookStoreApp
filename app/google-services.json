@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "504379034666",
+    "firebase_url": "https://shamrock-book-store.firebaseio.com",
+    "project_id": "shamrock-book-store",
+    "storage_bucket": "shamrock-book-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504379034666:android:20f1b2315fbbd31469c753",
+        "android_client_info": {
+          "package_name": "com.example.bookstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504379034666-paia6em5pngutl1417fuqrvv76u3k91n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookstore",
+            "certificate_hash": "cb1ec26298c7281336304ca74cff3d8a4106c377"
+          }
+        },
+        {
+          "client_id": "504379034666-8fb2blkg8r2uh9laope618ceqa0bsjo7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTgpG9hUDsCEpBgks8TpKEv0Qr40ho8GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504379034666-8fb2blkg8r2uh9laope618ceqa0bsjo7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

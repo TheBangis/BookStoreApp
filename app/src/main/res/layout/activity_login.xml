@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="37dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop= "10dp"
             android:layout_marginRight="37dp"
             android:background="@drawable/rectangle_edittext_click"
             android:fontFamily="sans-serif"
@@ -82,53 +82,6 @@
             android:textColor="@color/colorBlack"
             android:textColorHint="@color/colorBlack"
             android:textSize="15sp" />
-
-
-        <!--        <com.google.android.material.textfield.TextInputLayout-->
-        <!--            android:id="@+id/editEmail"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="15dp"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            app:boxStrokeColor="@color/colorAccent"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">-->
-
-        <!--            <com.google.android.material.textfield.TextInputEditText-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:hint="Email"-->
-        <!--                android:inputType="textEmailAddress"-->
-        <!--                android:maxLines="1"-->
-        <!--                android:maxLength="40"-->
-        <!--                android:nextFocusRight="@id/editPassword"-->
-        <!--                android:imeOptions="actionNext"/>-->
-
-        <!--        </com.google.android.material.textfield.TextInputLayout>-->
-
-        <!--        <com.google.android.material.textfield.TextInputLayout-->
-        <!--            android:id="@+id/editPassword"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_marginTop="15dp"-->
-        <!--            android:layout_marginBottom="15dp"-->
-        <!--            android:layout_marginLeft="10dp"-->
-        <!--            app:boxStrokeColor="@color/colorAccent"-->
-        <!--            android:layout_marginRight="10dp"-->
-        <!--            app:passwordToggleEnabled="true"-->
-        <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">-->
-
-        <!--            <com.google.android.material.textfield.TextInputEditText-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content"-->
-        <!--                android:inputType="textPassword"-->
-        <!--                android:hint="@string/password"-->
-        <!--                android:maxLines="1"-->
-        <!--                android:maxLength="20"-->
-        <!--                android:imeOptions="actionDone"-->
-        <!--                />-->
-
-        <!--        </com.google.android.material.textfield.TextInputLayout>-->
 
 
         <RelativeLayout
