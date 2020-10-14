@@ -7,7 +7,111 @@
     android:background="#F6F5F5"
     tools:context=".RegisterActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/AppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="37dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/rectangle_edittext_click"
+            android:fontFamily="sans-serif"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="32.5dp"
+            android:paddingTop="16.5dp"
+            android:paddingBottom="15.5dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop= "10dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/rectangle_edittext_click"
+            android:fontFamily="sans-serif"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="32.5dp"
+            android:paddingTop="16.5dp"
+            android:paddingBottom="15.5dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/forgot_password"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgetPassword"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border"
+                android:text="@string/log_in"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <!--            <ProgressBar-->
+            <!--                android:id="@+id/progressBar"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:elevation="4dp"-->
+            <!--                android:indeterminate="true"-->
+            <!--                android:visibility="gone"-->
+            <!--                tools:visibility="visible" />-->
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/not_registered_sign_up"
+            android:textSize="15sp" />
+
+    </LinearLayout>
 
 
 </ScrollView>
