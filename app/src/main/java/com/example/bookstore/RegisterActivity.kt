@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -17,9 +18,9 @@ import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
 
-    lateinit private var emailEditText: TextInputLayout
-    lateinit private var passwordEditText: TextInputLayout
-    lateinit private var nameEditText: TextInputLayout
+    lateinit private var emailEditText: EditText
+    lateinit private var passwordEditText: EditText
+    lateinit private var nameEditText: EditText
     lateinit var databaseReference: DatabaseReference
     lateinit var database: FirebaseDatabase
     lateinit var auth:FirebaseAuth
@@ -44,9 +45,9 @@ class RegisterActivity : AppCompatActivity() {
             emailEditText = findViewById(R.id.editEmail)
             passwordEditText = findViewById(R.id.editPassword)
 
-            val name = nameEditText.editText?.text.toString()
-            val email = emailEditText.editText?.text.toString()
-            val password = passwordEditText.editText?.text.toString()
+            val name = nameEditText.text.toString()
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
 
             if(!TextUtils.isEmpty(name) && !TextUtils.isEmpty(email) && !TextUtils.isEmpty(password))
 
@@ -61,6 +62,11 @@ class RegisterActivity : AppCompatActivity() {
                         currentUserDb.child("name").setValue(name)
                         currentUserDb.child("email").setValue(email)
                         currentUserDb.child("password").setValue(password)
+
+                        val intent = Intent(this, MainActivity::class.java)
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        startActivity(intent)
+                        finish()
 
                         progressBar.visibility = View.VISIBLE
                         Toast.makeText(this, "Registration successful", Toast.LENGTH_LONG).show()
