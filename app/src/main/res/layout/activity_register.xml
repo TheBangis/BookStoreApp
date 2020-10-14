@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F6F5F5"
+    android:background="@color/colorWhite"
     tools:context=".RegisterActivity">
 
     <LinearLayout
@@ -26,7 +26,7 @@
 
 
         <EditText
-            android:id="@+id/editEmail"
+            android:id="@+id/editName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="37dp"
@@ -35,6 +35,24 @@
             android:background="@drawable/rectangle_edittext_click"
             android:fontFamily="sans-serif"
             android:hint="@string/email"
+            android:inputType="text"
+            android:paddingLeft="32.5dp"
+            android:paddingTop="16.5dp"
+            android:paddingBottom="15.5dp"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop= "10dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/rectangle_edittext_click"
+            android:fontFamily="sans-serif"
+            android:hint="@string/password"
             android:inputType="textEmailAddress"
             android:paddingLeft="32.5dp"
             android:paddingTop="16.5dp"
@@ -53,8 +71,8 @@
             android:background="@drawable/rectangle_edittext_click"
             android:fontFamily="sans-serif"
             android:hint="@string/password"
-            android:inputType="textPassword"
-            android:paddingLeft="32.5dp"
+            android:inputType="numberPassword"
+            android:paddingStart="32.5dp"
             android:paddingTop="16.5dp"
             android:paddingBottom="15.5dp"
             android:textColor="@color/colorBlack"
@@ -67,20 +85,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp">
 
-            <TextView
-                android:id="@+id/forgetPassword"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="200dp"
-                android:layout_marginBottom="10dp"
-                android:text="@string/forgot_password"
-                android:textSize="15sp" />
 
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/forgetPassword"
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="45dp"
                 android:layout_marginTop="5dp"
