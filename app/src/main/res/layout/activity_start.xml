@@ -12,72 +12,32 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.8"
-            app:cardBackgroundColor="@color/colorPrimary"
-            app:cardElevation="4dp">
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="37dp"
+            android:text="@string/app_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/circle1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/circle"
-                android:layout_margin="10dp"/>
-
-
-                <ImageView
-                    android:id="@+id/circle3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/circlet"
-                    android:layout_toEndOf="@id/circle1"
-                    android:layout_marginTop="20dp"/>
-                <ImageView
-                    android:id="@+id/circle4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/circlet"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginLeft="10dp"/>
-
-                <ImageView
-                    android:id="@+id/ring"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="10dp"
-                    android:src="@drawable/ring" />
-
-                <TextView
-                    android:id="@+id/AppTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:text="@string/book_store"
-                    android:textColor="@color/colorWhite"
-                    android:layout_centerInParent="true"
-                    android:textSize="25sp" />
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="37dp"
+            android:text="@string/with"
+            android:textSize="15sp"
+            android:textStyle="normal" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1"
+            android:layout_marginTop="50dp"
             android:gravity="center_vertical"
             android:orientation="vertical">
 
@@ -85,27 +45,28 @@
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:background="@color/colorPrimary"
-                android:text="@string/log_in"
+                android:background="@drawable/border"
                 android:textAllCaps="false"
+                android:text="Register"
                 android:clickable="true"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:focusable="true" />
 
             <Button
                 android:id="@id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="15dp"
                 android:background="@drawable/border"
-                android:text="Register"
                 android:textAllCaps="false"
+                android:text="@string/log_in"
                 android:clickable="true"
-                android:textColor="@color/colorPrimary" />
+                android:textColor="@color/colorWhite"
+                android:focusable="true" />
         </LinearLayout>
 
     </LinearLayout>

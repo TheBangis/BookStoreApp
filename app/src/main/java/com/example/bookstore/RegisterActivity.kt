@@ -33,6 +33,7 @@ class RegisterActivity : AppCompatActivity() {
 
         signUpTx.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(intent)
         }
 
@@ -66,7 +67,6 @@ class RegisterActivity : AppCompatActivity() {
                         val intent = Intent(this, MainActivity::class.java)
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                         startActivity(intent)
-                        finish()
 
                         progressBar.visibility = View.VISIBLE
                         Toast.makeText(this, "Registration successful", Toast.LENGTH_LONG).show()
